@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '../screens/bmi_screen.dart';
 import '../screens/intro_screen.dart';
 
-
 class MenuDrawer extends StatelessWidget {
   const MenuDrawer({super.key});
 
@@ -27,25 +26,23 @@ class MenuDrawer extends StatelessWidget {
         decoration: BoxDecoration(color: Colors.blueGrey),
         child: Text('MindWell',
             style: TextStyle(color: Colors.white, fontSize: 28))));
-    menuTitles.forEach((String element) { 
+    menuTitles.forEach((String element) {
       Widget screen = Container();
       menuItems.add(ListTile(
-        title: Text(element,
-        style: TextStyle(fontSize: 18)),
-        onTap: () {
-          switch (element){
-            case 'Home':
-            screen = IntroScreen();
-            break;
-            case 'BMI Calculator':
-            screen = BmiScreen();
-            break;
-          }
-          Navigator.of(context).pop();
-          Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) => screen)
-          );
-        }));
+          title: Text(element, style: TextStyle(fontSize: 18)),
+          onTap: () {
+            switch (element) {
+              case 'Home':
+                screen = IntroScreen();
+                break;
+              case 'BMI Calculator':
+                screen = BmiScreen();
+                break;
+            }
+            Navigator.of(context).pop();
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => screen));
+          }));
     });
     return menuItems;
   }
