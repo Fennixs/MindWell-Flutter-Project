@@ -14,7 +14,7 @@ class _BmiScreenState extends State<BmiScreen> {
   final TextEditingController textWeight = TextEditingController();
   final double fontSize = 18;
   String result = '';
-  bool isMetric = true;
+  bool isMetric = true; 
   bool isImperial = false;
   double? height;
   double? weight;
