@@ -19,6 +19,5 @@ Personalized training routines to help users stay fit and healthy.
 As of May 5th 2023. This project is still a work in progress and more features will be added in the future. I welcome any feedback or contributions to help improve the app. 
 
 ## TASK TODO
-1) Build BMI screen
-2) Build Weather screen
-3) Build Training screen
+1) Build Weather screen
+2) Build Training screen
